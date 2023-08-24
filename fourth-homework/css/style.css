@@ -294,25 +294,22 @@ body {
     justify-content: space-between;
 }
 
-.card-link-wrapper {
+.card {
+    width: 570px;
     transition: .3s;
 }
 
-.card-link-wrapper:hover {
-    opacity: 0.8;
-}
-
-.card {
-    width: 570px;
-}
-
-.card.bigger {
+.wide-card {
     width: 670px;
+    transition: .3s;
 }
 
-.card.small {
+.high-card {
     width: 470px;
+    transition: .3s;
 }
+
+.card:hover, .wide-card:hover, .high-card:hover {opacity: 0.8;}
 
 .card-title-wrapper {
     display: flex;
@@ -326,21 +323,13 @@ body {
     white-space: nowrap;
 }
 
-.card.extreme-color .card-title-wrapper {
-    background-color: #C1B19B;
-}
+.extreme-color {background-color: #C1B19B;}
 
-.card.adventures-color .card-title-wrapper {
-    background-color: #66B0BE;
-}
+.adventures-color {background-color: #66B0BE;}
 
-.card.tracking-color .card-title-wrapper {
-    background-color: #876F56;
-}
+.tracking-color {background-color: #876F56;}
 
-.card.exotic-color .card-title-wrapper {
-    background-color: #27695E;
-}
+.exotic-color {background-color: #27695E;}
 
 .card-title {
     font-size: 28px;
