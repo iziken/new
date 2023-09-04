@@ -4,11 +4,20 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Forest Travel</title>
+		<title>Контакты - агенство Форест Тревел</title>
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="img/favicons/site.webmanifest">
+      <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="img/favicons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#00aba9">
+      <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
 		<header class="header-inner">
@@ -17,7 +26,7 @@
 				<nav class="header-nav">
 					<ul class="header-nav-list">
 						<li class="header-nav-list-item">
-							<a href="index.html" class="header-nav-link">Главная</a>
+							<a href="main.html" class="header-nav-link">Главная</a>
 						</li>
 						<li class="header-nav-list-item">
 							<a href="tours.html" class="header-nav-link">Туры и направления</a>
@@ -45,9 +54,9 @@
 
                <div class="contact-info">
                   <div class="contact-block">
-                     <h4 class="contact-block-title">
+                     <h3 class="contact-block-title">
                         Телефон и адрес
-                     </h4>
+                     </h3>
                      <div class="contact-block-body">
                         <ul class="contact-list">
                            <li class="contact-list-icon phone"><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
@@ -58,9 +67,9 @@
                   </div>
 
                   <div class="contact-block">
-                     <h4 class="contact-block-title">
+                     <h3 class="contact-block-title">
                         Карта
-                     </h4>
+                     </h3>
                      <div class="contact-block-body">
                         <!-- <img src="img/contacts/map.jpg" alt="map"> -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.447544749303!2d37.7955176!3d55.7159741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab59b3be61f9b%3A0x8e6799da30ecf98a!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCA1NCwg0JzQvtGB0LrQstCwLCAxMDkzNzc!5e0!3m2!1sru!2sru!4v1693402075094!5m2!1sru!2sru" width="470" height="345" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -71,8 +80,8 @@
                <form class="form">
                   <h3 class="form-title">Заявка на подбор тура</h3>
 
-                  <div class="form-group">
-                     <div class="form-group-title">Личные данные</div>
+                  <fieldset class="form-group">
+                     <legend class="form-group-title">Личные данные</legend>
 
                      <div class="form-group-row">
                         <input class="input" type="text" placeholder="Введите имя">
@@ -82,10 +91,10 @@
                         <input class="input" type="tel" placeholder="Телефон" required>
                         <input class="input" type="email" placeholder="Email" required>
                      </div>
-                  </div>
+                  </fieldset>
 
-                  <div class="form-group">
-                     <div class="form-group-title">Количество человек для тура</div>
+                  <fieldset class="form-group">
+                     <legend class="form-group-title">Количество человек для тура</legend>
                         <label class="radio-row">
                            <input name="number-of-people" class="real-radio" type="radio">
                            <span class="custom-radio"></span>
@@ -101,10 +110,10 @@
                            <span class="custom-radio"></span>
                            <span>11 человек и более</span>
                         </label>
-                  </div>
+                  </fieldset>
 
-                  <div class="form-group">
-                     <div class="form-group-title">Какие направления вам интересны</div>
+                  <fieldset class="form-group">
+                     <legend class="form-group-title">Какие направления вам интересны</legend>
 
                      <label class="checkbox-row">
                         <input name="2-4" class="real-checkbox" type="checkbox">
@@ -129,7 +138,7 @@
                         <span class="custom-checkbox"></span>
                         <span>Комбинированные: море, горы, города, лес.</span>
                      </label>
-                  </div>
+                  </fieldset>
 
                   <button class="button">Отправить заявку</button>
 
@@ -150,16 +159,16 @@
 					</div>
 					<div class="footer-widgets-wrapper">
 						<div class="footer-widget footer-widget-info">
-							<h4 class="footer-widget-title">Информация</h4>
+							<h3 class="footer-widget-title">Информация</h3>
 							<ul class="footer-widget-list">
-								<li><a href="index.html">Главная</a></li>
+								<li><a href="main.html">Главная</a></li>
 								<li><a href="#">О компании</a></li>
 								<li><a href="#">Галерея</a></li>
 								<li><a href="#">Блог</a></li>
 							</ul>
 						</div>
 						<div class="footer-widget footer-widget-services">
-							<h4 class="footer-widget-title">Услуги</h4>
+							<h3 class="footer-widget-title">Услуги</h3>
 							<ul class="footer-widget-list">
 								<li><a href="#">Бесплатные туры</a></li>
 								<li><a href="#">Невероятные приключения</a></li>
@@ -169,7 +178,7 @@
 							</ul>
 						</div>
 						<div class="footer-widget footer-widget-contacts">
-							<h4 class="footer-widget-title">Контакты</h4>
+							<h3 class="footer-widget-title">Контакты</h3>
 							<p><a href="tel:+79055555555">+7 (905) 555-55-55</a></p>
 							<p><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></p>
 							<p>г. Москва, Рязанский проспект 54, офис 112.</p>

@@ -5,8 +5,32 @@ font-family: 'Lobster', cursive;
 font-family: 'PT Sans', sans-serif;
 */
 
+html {
+    height: 100%; /*sticky footer*/
+}
+
 body {
+    height: 100%; /*sticky footer*/
+    display: flex; /*sticky footer*/
+    flex-direction: column; /*sticky footer*/
     font-family: 'PT Sans', sans-serif;
+}
+
+body > * {
+    flex-shrink: 0; /*sticky footer*/
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 input {
@@ -196,6 +220,7 @@ input {
 /* footer  */
 
 .footer {
+    margin-top: auto; /*sticky footer*/
     padding-top: 71px;
     padding-bottom: 94px;
     background-color: #265847;
@@ -463,7 +488,6 @@ input {
 
 .contact-block-body {
     font-size: 20px;
-    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -672,4 +696,34 @@ input {
 .real-checkbox:focus + .custom-checkbox{
     border: 1px solid #2ab698;
     box-shadow: 0 0 10px rgba(42, 182, 152, 0.5);
+}
+
+/* index.html */
+
+.ui {
+    padding: 40px;
+}
+
+.ui-header {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.ui-header-2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+ul.ui-list {
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+ul.ui-list li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+ul.ui-list a {
+    color: #138ece;
 }
