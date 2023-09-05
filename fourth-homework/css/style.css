@@ -38,8 +38,10 @@ input {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main-header {
@@ -106,6 +108,10 @@ input {
 
 .header-nav {
     font-size: 22px;
+}
+
+.header-nav-button {
+    display: none;
 }
 
 .header-nav-list {
