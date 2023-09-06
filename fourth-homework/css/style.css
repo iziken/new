@@ -103,7 +103,7 @@ input {
 .logo {
     font-family: 'Lobster', cursive;
     font-size: 40px;
-    line-height: 50px;
+    line-height: normal;
 }
 
 .header-nav {
@@ -282,7 +282,6 @@ input {
 }
 
 .footer-widget p {
-    margin-top: 0;
     margin-bottom: 15px;
 }
 
