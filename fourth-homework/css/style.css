@@ -52,6 +52,12 @@ input {
   background-color: #F2F8F6;
 }
 
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  line-height: normal;
+}
+
 .button {
   display: inline-block;
   height: 50px;
