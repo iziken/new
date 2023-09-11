@@ -1,0 +1,48 @@
+.main {
+   padding: 120px 0;
+ }
+
+ .main-row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 120px;
+   &:nth-child(even) {
+     flex-direction: row-reverse;
+   }
+   &:last-child {
+     margin-bottom: 0;
+   }
+ }
+
+ .main-content {
+   width: 470px;
+ }
+
+ .main-content-header {
+   margin-bottom: 20px;
+ }
+
+ .main-content-text {
+   color: #31405B;
+   font-size: 20px;
+   line-height: 1.6;
+   margin-bottom: 40px;
+
+   p {
+     top: 0;
+     margin-bottom: 15px;
+   }
+
+   a {
+     color: #138ECE;
+     text-decoration: underline;
+   }
+ }
+
+ .main-img {
+   width: 570px;
+
+   img {
+     display: block;
+   }
+ }

@@ -1,0 +1,80 @@
+.footer {
+   margin-top: auto; //sticky footer
+   padding-top: 71px;
+   padding-bottom: 94px;
+   background-color: #265847;
+   color: #fff;
+
+   a {
+     text-decoration: none;
+     color: #fff;
+     &:hover {
+       text-decoration: underline;
+      }
+   }
+ }
+
+ .footer-row {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .footer-copyright {
+   width: 270px;
+ }
+
+ .footer-widgets-wrapper {
+   display: flex;
+   padding-top: 9px;
+ }
+
+ .footer-logo {
+   margin-bottom: 26px;
+ }
+
+ .footer-copyright p {
+   font-size: 16px;
+   line-height: 1.6;
+ }
+
+ .footer-widget {
+   font-size: 18px;
+ }
+
+ .footer-widget-info {
+   width: 170px;
+ }
+
+ .footer-widget-services, .footer-widget-contacts {
+   width: 270px;
+ }
+
+ .footer-widget {
+   + .footer-widget {
+     margin-left: 30px;
+   }
+
+   p {
+     margin-bottom: 15px;
+     &:last-child {
+       margin-bottom: 0;
+      }
+   }
+ }
+
+ .footer-widget-title {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 30px;
+ }
+
+ .footer-widget-list {
+   font-size: 18px;
+
+   li {
+     margin-bottom: 15px;
+     &:last-child {
+       margin-bottom: 0;
+      }
+   }
+ }

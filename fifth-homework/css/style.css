@@ -100,7 +100,7 @@ img {
    margin-bottom: 0;
 }
 
-a.link {
+.link {
    color: #000;
    text-decoration: underline;
 }
@@ -109,7 +109,7 @@ a.link {
    padding-bottom: 108px;
 }
 
-.another-products__title {
+.another-products__title-wrap {
    margin-bottom: 46px;
    text-align: center;
 }
