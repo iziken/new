@@ -2,7 +2,7 @@
    position: relative;
    height: 870px;
    @include bgImage('./../img/bg/header-02.jpg');
-   &:before {
+   &::before {
       @extend %overlay;
    }
    &__wrapper {
