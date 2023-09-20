@@ -1,0 +1,34 @@
+.section-tasks {
+   padding-top: 80px;
+   padding-bottom: 40px;
+   border-bottom: 1px solid #E1E1E1;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 114px;
+   }
+   &__content {
+      width: 570px;
+   }
+   &__header {
+      margin-bottom: 30px;
+   }
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__text {
+      width: 400px;
+      color: $paragraphColor;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 2.14;
+      p {
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}

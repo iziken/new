@@ -1,0 +1,29 @@
+/* Reset and base styles  */
+html {
+	height: 100%; /* sticky footer */
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100%; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: $textColor;
+}
+
+img {
+	display: block;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}

@@ -1,0 +1,63 @@
+.header {
+   position: relative;
+   height: 870px;
+   @include bgImage('./../img/bg/header-02.jpg');
+   &:before {
+      @extend %overlay;
+   }
+   &__wrapper {
+      position: absolute;
+      z-index: 9;
+      padding-top: 60px;
+      color: #fff;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+   }
+   &__buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 140px;
+   }
+   &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-bottom: 35px;
+      text-align: center; // можно же просто указать text-align: center; а всё остальное убрать ?
+   }
+   &__title {
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 40px;
+   }
+   &__descr {
+      max-width: 730px;
+      margin: 0 auto;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 70px;
+      p {
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__form {
+      display: flex;
+      justify-content: center;
+      & > * + * {
+         margin-left: 20px;
+      }
+   }
+   &__scroll {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}

@@ -1,0 +1,32 @@
+.section-focus {
+   padding-top: 80px;
+   padding-bottom: 40px;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+   &__content {
+      width: 470px;
+      padding-top: 30px;
+   }
+   &__header {
+      margin-bottom: 30px;
+   }
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__text {
+      width: 400px;
+      color: $paragraphColor;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 2.14;
+      p {
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}

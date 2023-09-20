@@ -1,0 +1,78 @@
+.slider {
+   position: relative;
+   &__arrow {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 54px;
+      height: 54px;
+      background: #F5F5F5;
+      border-radius: 50%;
+      transition: .3s;
+      path {
+         transition: .3s;
+      }
+      &:hover {
+         background-color: #00c470;;
+      }
+      &:hover path {
+         stroke: white;
+      }
+      &--left {
+         top: 53px;
+         left: -46px;
+         transform: translateX(-100%);
+      }
+      &--right {
+         top: 53px;
+         right: -46px;
+         transform: translateX(100%);
+      }
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-text {
+         padding: 0 5px;
+         margin-bottom: 30px;
+         text-align: center;
+         color: #000;
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 2;
+         p {
+            margin-bottom: 15px;
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+      &-author {
+         display: flex;
+         align-items: center;
+      }
+      &-avatar {
+         margin-right: 20px;
+         width: 80px;
+         height: 80px;
+         border-radius: 50%;
+         overflow: hidden;
+      }
+      &-author-desc {
+         font-size: 16px;
+         font-weight: 500;
+      }
+      &-author-title {
+         display: block;
+         margin-bottom: 5px;
+         color: #00C470;
+      }
+      &-author-name {
+         display: block;
+         color: $paragraphColor;
+         line-height: normal;
+      }
+   }
+}

@@ -1,0 +1,27 @@
+.card {
+   width: 270px;
+   text-align: center;
+   &__img {
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   &__title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+   }
+   &__text {
+      color: $paragraphColor;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 2.14;
+   }
+   p {
+      margin-bottom: 15px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}

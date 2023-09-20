@@ -1,0 +1,19 @@
+.input {
+   width: 240px;
+   height: 60px;
+   border-radius: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+   background: rgba(0, 0, 0, 0.75);
+
+   font-size: 14px;
+   font-weight: 700;
+   &::placeholder{
+      color: #fff;
+   }
+   &:focus {
+      background: rgba(0, 0, 0, 1);
+   }
+}
+
+
