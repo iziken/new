@@ -2,21 +2,92 @@
    padding-top: 80px;
    padding-bottom: 40px;
    border-bottom: 1px solid #E1E1E1;
+
+   /* Tablet */
+   @media (max-width: 1199px) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+   }
+
+   /* Mobile */
+   @media (max-width: 899px) {
+      padding-bottom: 10px;
+   }
+
+   /* Mobile XS */
+   @media (max-width: 599px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+
    &__row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-left: 100px;
       padding-right: 114px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         padding-left: 75px;
+         padding-right: 0;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         padding-left: 0;
+         flex-direction: row-reverse;
+         align-items: flex-start;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         flex-direction: column-reverse;
+      }
    }
    &__content {
       width: 570px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         width: 495px;
+         padding-bottom: 10px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         width: 100%;
+         padding-bottom: 0;
+         padding-top: 8px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         width: 290px;
+         padding-top: 0;
+         text-align: center;
+      }
    }
    &__header {
       margin-bottom: 30px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         margin-bottom: 20px;
+      }
    }
    &__title {
       margin-bottom: 30px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         margin-bottom: 20px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         margin-bottom: 10px;
+      }
    }
    &__text {
       width: 400px;
@@ -28,6 +99,39 @@
          margin-bottom: 15px;
          &:last-child {
             margin-bottom: 0;
+         }
+      }
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         width: unset;
+         max-width: 420px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         line-height: 1.7;
+      }
+   }
+   &__img {
+      /* Tablet */
+      @media (max-width: 1199px) {
+         width: 265px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         width: 270px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         width: 100%;
+         text-align: center;
+         margin-bottom: 10px;
+         img {
+            width: 270px;
+            margin: 0 auto;
          }
       }
    }

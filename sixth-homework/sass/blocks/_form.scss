@@ -1,5 +1,5 @@
 .input {
-   width: 240px;
+   display: block;
    height: 60px;
    border-radius: 30px;
    padding-left: 30px;
@@ -13,6 +13,18 @@
    }
    &:focus {
       background: rgba(0, 0, 0, 1);
+   }
+
+   /* Mobile */
+   @media (max-width: 899px) {
+      padding-left: 46px;
+      padding-right: 46px;
+   }
+
+   /* Mobile XS */
+   @media (max-width: 599px) {
+      padding-left: 36px;
+      padding-right: 36px;
    }
 }
 

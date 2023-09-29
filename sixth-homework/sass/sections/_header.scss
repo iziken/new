@@ -1,38 +1,115 @@
 .header {
    position: relative;
-   height: 870px;
-   @include bgImage('./../img/bg/header-02.jpg');
+   // height: 870px;
+
+   @include bgImage('./../img/bg/header.jpg');
    &::before {
       @extend %overlay;
    }
+
+   /* Desctop MD */
+   @media (max-width: 1600px) {
+      @include bgImage('./../img/bg/header-1600.jpg');
+   }
+
+   /* Tablet */
+   @media (max-width: 1199px) {
+      @include bgImage('./../img/bg/header-900.jpg');
+   }
+
+   /* Mobile */
+   @media (max-width: 899px) {
+      @include bgImage('./../img/bg/header-600.jpg');
+   }
+
+   /* Mobile XS */
+   @media (max-width: 599px) {
+      @include bgImage('./../img/bg/header-320.jpg');
+   }
+
    &__wrapper {
-      position: absolute;
-      z-index: 9;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding-top: 60px;
+      padding-bottom: 100px;
+      z-index: 9;
       color: #fff;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         padding-bottom: 50px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         padding-top: 20px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         padding-bottom: 40px;
+      }
    }
    &__buttons {
       display: flex;
       justify-content: space-between;
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 140px;
+
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         width: 100%;
+         margin-bottom: 100px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         margin-bottom: 30px;
+      }
    }
    &__content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding-bottom: 35px;
-      text-align: center; // можно же просто указать text-align: center; а всё остальное убрать ?
+      margin-bottom: 148px;
+      text-align: center;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         margin-bottom: 129px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         margin-bottom: 80px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         margin-bottom: 50px;
+      }
    }
    &__title {
       font-size: 96px;
       font-weight: 700;
       line-height: 1;
       margin-bottom: 40px;
+
+      /* Tablet */
+      @media (max-width: 1199px) {
+         margin-bottom: 35px;
+         font-size: 84px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         margin-bottom: 30px;
+         font-size: 70px;
+      }
    }
    &__descr {
       max-width: 730px;
@@ -40,24 +117,64 @@
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 70px;
+      line-height: 1.2;
       p {
          margin-bottom: 15px;
          &:last-child {
             margin-bottom: 0;
          }
       }
+
+       /* Tablet */
+       @media (max-width: 1199px) {
+         margin-bottom: 50px;
+         font-size: 18px;
+      }
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         max-width: 430px;
+         font-size: 16px;
+      }
+
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         margin-bottom: 30px;
+      }
    }
    &__form {
       display: flex;
       justify-content: center;
+      margin: 0 auto;
+
+      /* Mobile */
+      @media (max-width: 899px) {
+         width: 370px;
+         flex-direction: column;
+         align-items: stretch;
+      }
+      /* Mobile XS */
+      @media (max-width: 599px) {
+         width: 100%;
+      }
+
       & > * + * {
          margin-left: 20px;
+
+         /* Mobile */
+         @media (max-width: 899px) {
+            margin-left: 0;
+            margin-top: 20px;
+         }
       }
-   }
-   &__scroll {
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%);
+
+      &-input {
+         width: 240px;
+
+         /* Mobile */
+         @media (max-width: 899px) {
+            width: 100%;
+         }
+      }
    }
 }
