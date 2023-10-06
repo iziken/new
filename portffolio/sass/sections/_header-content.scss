@@ -1,0 +1,47 @@
+.header-content {
+   &__wrapper {
+
+   }
+   .flex-wrapper {
+      display: flex;
+      column-gap: 102px;
+   }
+   &__text {
+      width: 535px;
+      margin-top: 19px;
+   }
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__description {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      p {
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   &__btn {
+      display: flex;
+      column-gap: 20px;
+   }
+   &__img {
+      img {
+         width: 475px;
+         height: 410px;
+         object-fit: cover;
+         box-shadow: 40px 40px rgba(255, 255, 255, 0.50);
+      }
+   }
+   &__banner {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+      margin-top: -157px;
+   }
+}
