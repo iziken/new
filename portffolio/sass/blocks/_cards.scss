@@ -3,6 +3,8 @@
    min-height: 296px;
    img {
       height: 220px;
+      width: 350px;
+      object-fit: cover;
    }
    &__text {
       padding-top: 16px;
@@ -27,6 +29,8 @@
       min-height: 463px;
       img {
          height: 370px;
+         width: 540px;
+         object-fit: cover;
       }
       .card__text {
          padding-top: 20px;
