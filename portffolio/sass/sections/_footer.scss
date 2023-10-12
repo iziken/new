@@ -1,0 +1,27 @@
+.footer {
+	margin-top: auto; /* sticky footer */
+   height: 170px;
+	background-color: #333;
+	padding-top: 40px;
+   padding-bottom: 50px;
+   &-title {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 10px;
+   }
+   &-descr {
+      color: #B0B0B0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      a {
+         color: #FFF;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 1.5;
+         text-decoration-line: underline;
+      }
+   }
+}

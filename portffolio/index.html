@@ -42,10 +42,10 @@
 				<div class="header-wrapper">
 					<nav class="header__menu">
 						<ul>
-							<li><a href="#">Навыки</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Как я работаю</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#skills">Навыки</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#timeline">Как я работаю</a></li>
+							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="header-social">
@@ -76,7 +76,7 @@
 							</div>
 							<div class="header-content__btn">
 								<a href="#skills" class="button">Познакомиться</a>
-								<a href="#!" class="button button--light">Контакты</a>
+								<a href="#contacts" class="button button--light">Контакты</a>
 							</div>
 						</div>
 
@@ -122,7 +122,7 @@
 			</div>
 		</section>
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<div class="portfolio-section__title">
 					<h2 class="portfolio-title grad-border">Портфолио</h2>
@@ -183,7 +183,7 @@
 			</div>
 		</section>
 
-		<section class="timeline">
+		<section class="timeline" id="timeline">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="h2 grad-border">Как я работаю</h2>
@@ -231,9 +231,49 @@
 			</div>
 		</section>
 
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="section-title">
+					<h2 class="h2 grad-border">Контакты</h2>
+				</div>
+
+				<div class="contacts__content">
+					<div class="contacts__info">
+						<ul class="contacts-list">
+							<li class="contacts-list__item"><span>Email</span><a href="#!" class="page-link">yurij.kluchevsky@gmail.com</a></li>
+							<li class="contacts-list__item"><span>Телефон</span><a href="tel:+79801234567" class="page-link">+7 (980) 123-45-67</a></li>
+						</ul>
+						<div class="social-block">
+							<a href="#!"><img src="./img/icons/telegram.svg" alt="telegram"></a>
+							<a href="#!"><img src="./img/icons/vk.svg" alt="vk"></a>
+							<a href="#!"><img src="./img/icons/facebook.svg" alt="facebook"></a>
+							<a href="#!"><img src="./img/icons/instagram.svg" alt="instagram"></a>
+							<a href="#!"><img src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+						</div>
+					</div>
+
+					<div class="contacts__text">
+						<img src="./img/icons/contacts-icon.svg.svg" alt="contacts-icon">
+						<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 
 		<footer class="footer">
-			Footer. Всегда внизу страницы
+			<div class="container">
+				<div class="footer-title">
+					<h3>© 2021 — Юрий Ключевский</h3>
+				</div>
+				<div class="footer-descr">
+					<p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.
+					</p>
+					<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+				</div>
+			</div>
 		</footer>
 
 	</body>
