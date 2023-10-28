@@ -17,6 +17,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
+		<!-- OwlCarousel -->
+		<link rel="stylesheet" href="./libs/owlCarousel2/assets/owl.carousel.min.css">
+
 		<!-- Open Graph -->
 		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
 		<!-- <meta property="og:type" content="website" />
@@ -257,45 +260,88 @@
 					<h3 class="subtitle">Что говорят пользователи</h3>
 				</header>
 
+				<!-- Slider wrapper -->
 				<div class="section-clients__slider">
-					<div class="slider">
-						<button class="slider__arrow slider__arrow--left">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M20 12H4" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M10 18L4 12L10 6" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-						</button>
-						<button class="slider__arrow slider__arrow--right">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M4 12H20" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M14 6L20 12L14 18" stroke="#00C470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-						</button>
 
-						<div class="slider__pagination">
-							<button class="slider__pagination-item"></button>
-							<button class="slider__pagination-item slider__pagination-item--active"></button>
-							<button class="slider__pagination-item"></button>
-							<button class="slider__pagination-item"></button>
-							<button class="slider__pagination-item"></button>
-						</div>
+					<button class="slider__arrow slider__arrow--left" id="sliderPrev">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g class="slider__arrow-svg">
+								<path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							</svg>
+					</button>
 
-						<div class="slider__item">
-							<div class="slider__item-text">
-								<p>Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока.</p>
+					<button class="slider__arrow slider__arrow--right" id="sliderNext">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g class="slider__arrow-svg">
+								<path d="M4 12H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14 6L20 12L14 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+					  </svg>
+
+					</button>
+
+
+
+					<div class="slider owl-carousel owl-theme" id="clients-slider">
+
+						<!-- slider item -->
+						<div class="slider-item">
+							<div class="slider-item__text">
+								<p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока.</p>
 							</div>
-							<div class="slider__item-author">
-								<div class="slider__item-avatar">
-									<img src="./img/users/01.jpg" alt="avatar">
+							<div class="slider-item__author">
+								<div class="slider-item__avatar">
+									<img src="./img/users/01.jpg" alt="Avatar">
 								</div>
-								<div class="slider__item-author-desc">
-									<span class="slider__item-author-title">Фрилансер</span>
-									<span class="slider__item-author-name">Николай Остапов</span>
+								<div class="slider-item__author-desc">
+									<span class="slider-item__author-title">Фрилансер</span>
+									<span class="slider-item__author-name">Николай Остапов</span>
 								</div>
 							</div>
 						</div>
+						<!-- slider item -->
+
+						<!-- slider item -->
+						<div class="slider-item">
+							<div class="slider-item__text">
+								<p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока.</p>
+							</div>
+							<div class="slider-item__author">
+								<div class="slider-item__avatar">
+									<img src="./img/users/01.jpg" alt="Avatar">
+								</div>
+								<div class="slider-item__author-desc">
+									<span class="slider-item__author-title">Фрилансер</span>
+									<span class="slider-item__author-name">Николай Остапов</span>
+								</div>
+							</div>
+						</div>
+						<!-- slider item -->
+
+						<!-- slider item -->
+						<div class="slider-item">
+							<div class="slider-item__text">
+								<p> Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока.</p>
+							</div>
+							<div class="slider-item__author">
+								<div class="slider-item__avatar">
+									<img src="./img/users/01.jpg" alt="Avatar">
+								</div>
+								<div class="slider-item__author-desc">
+									<span class="slider-item__author-title">Фрилансер</span>
+									<span class="slider-item__author-name">Николай Остапов</span>
+								</div>
+							</div>
+						</div>
+						<!-- slider item -->
+
+
 					</div>
+
 				</div>
+				<!-- Slider wrapper -->
 			</div>
 		</section>
 
@@ -320,6 +366,12 @@
 			</div>
 		</footer>
 
+		<!-- Libs -->
+		<script src="./libs/jquery-3.7.1.min.js"></script>
+		<script src="./libs/owlCarousel2/owl.carousel.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="./js/clients-carousel.js"></script>
 		<script src="./js/script.js"></script>
 
 	</body>

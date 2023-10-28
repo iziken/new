@@ -33,6 +33,11 @@
 @import "./blocks/button-solid";
 @import "./blocks/slider";
 
+// OwlCarousel Theme
+
+@import "./owlcarousel-clients-theme/vars";
+@import "./owlcarousel-clients-theme/theme";
+
 
 // Media
 @import "./media/media";
